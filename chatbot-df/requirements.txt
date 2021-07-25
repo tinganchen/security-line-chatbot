@@ -1,0 +1,4 @@
+line-bot-sdk
+flask
+PyCryptodome==3.4.3
+pandas
