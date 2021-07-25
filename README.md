@@ -4,7 +4,17 @@
 
 A LINE chatbot build-up for RSA encryption & decryption services (database is built upon 1. dataframe, and 2. Spark database).
 
-### QR code & Demo
+### Functions
+
+- Encryption: type "$$message$$", then the encrypted message will be sent back, and be stored into dataframe / database
+- Decryption: type "@@message@@", then the decrypted message will be sent back, and be stored into dataframe / database
+- Log file
+  - View: view the last 5 historical encryption or decryption records (personal info only)
+  - Clean: clean all individual historical records in the dataframe / database (other users are remained)
+
+### Security chatbot QR code & Demo
+
+
 
 ### Settings
 
@@ -47,11 +57,17 @@ git add .
 git commit -am 'upload'
 git push -f heroku master
 ```
-- Now the project is built. Copy the deplyment url with /callback: https://<Heroku_app_name>.herokuapp.com/callback as the LINE Webhook URL (LINE >> Messaging API settings >> Webhook settings) & verify as success.
+- Now the project is built. 
+  
+- Copy the deplyment url with /callback: https://<Heroku_app_name>.herokuapp.com/callback 
+
+- Paste onto LINE Webhook URL (LINE >> Messaging API settings >> Webhook settings) 
+  
+- Verified as success. (To ensure no runtime error)
   
 - Scan the chatbot QR code (LINE >> Messaging API settings >> QR code)
 
-- Start interacting with the chatbot in the LINE chat room
+- Can start interacting with the chatbot in the LINE chat room
 
   
 ##### 2. Security Chatbot on Spark database + ngrok
@@ -75,21 +91,24 @@ cd <directory where ngrok downloaded>
 ./ngrok http 5000
 ```
 
-Copy the forwarding url: https://xxxxxxxx.ngrok.io
+- Copy the forwarding url with /callback: https://xxxxxxxx.ngrok.io/callback
 
 - LINE webhook url use & verify
 
-- Paste the ngrok forwarding url with /callback: https://xxxxxxxx.ngrok.io/callback as the LINE Webhook URL (LINE >> Messaging API settings >> Webhook settings) & verify as success.
+- Paste onto LINE Webhook URL (LINE >> Messaging API settings >> Webhook settings)
+
+- Verified as success. (To ensure no runtime error)
 
 - Scan the chatbot QR code (LINE >> Messaging API settings >> QR code)
 
-- Start interacting with the chatbot in the LINE chat room
+- Can start interacting with the chatbot in the LINE chat room
 
 
+### Issue
+  
+It seems Heroku does not support Spark. The project chatbot-spark/ can be built on Heroku, but the Heroku app webhook url cannot be verified by LINE.
 
-
-### Issues
-
+  
 ### Reference
 
 - [1] LINE official: https://github.com/line/line-bot-sdk-python
