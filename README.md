@@ -42,12 +42,12 @@ python3 app.py
 ```shell
 heroku login
 git init
-heroku git:remote -a <Heroku app name>
+heroku git:remote -a $Heroku app name$
 git add .
 git commit -am 'upload'
 git push -f heroku master
 ```
-Now the project is built. Copy the deplyment url with /callback: https://<Heroku app name>.herokuapp.com/callback as the LINE Webhook URL (LINE >> Messaging API settings >> Webhook settings) & verify as success.
+- Now the project is built. Copy the deplyment url with /callback: https://$Heroku app name$.herokuapp.com/callback as the LINE Webhook URL (LINE >> Messaging API settings >> Webhook settings) & verify as success.
   
 - Scan the chatbot QR code (LINE >> Messaging API settings >> QR code)
 
@@ -79,7 +79,7 @@ Copy the forwarding url: https://xxxxxxxx.ngrok.io
 
 - LINE webhook url use & verify
 
-Paste the ngrok forwarding url with /callback: https://xxxxxxxx.ngrok.io/callback as the LINE Webhook URL (LINE >> Messaging API settings >> Webhook settings) & verify as success.
+- Paste the ngrok forwarding url with /callback: https://xxxxxxxx.ngrok.io/callback as the LINE Webhook URL (LINE >> Messaging API settings >> Webhook settings) & verify as success.
 
 - Scan the chatbot QR code (LINE >> Messaging API settings >> QR code)
 
