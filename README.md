@@ -1,4 +1,7 @@
-# security-line-chatbot
+# A LINE security chatbot
+
+### Chatbot QR code & Demo
+
 
 ### Inroduction
 
@@ -16,9 +19,7 @@ A LINE chatbot build-up for RSA encryption & decryption services (database is bu
   
   * Clean: clean all individual historical records in the dataframe / database (other users are remained)
   
-- Help: show the functions description
-
-### Security chatbot QR code & Demo
+- Help: show the description of functions
 
 
 
