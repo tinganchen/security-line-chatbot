@@ -15,9 +15,9 @@ from spark_db import *
 app = Flask(__name__)
 
 # Channel Access Token
-line_bot_api = LineBotApi('NKgOQi+QVYJcLfYEQnjpNVOBhiS0hM++TYnB6ShWlqhfdsoNZduNhO1gxfOj8cZ4llSAr8vSYm8Lh5M6rP7AAYUlyugr3mC2CZZPmB3LYkGqb9aOLu3ABPBLYQBl00RLGFpVWWd1TBODV8sqjtwPwAdB04t89/1O/w1cDnyilFU=')
+line_bot_api = LineBotApi('Your LINE Channel Access Token')
 # Channel Secret
-handler = WebhookHandler('0c85ced291078e921b940b8a80b7c7ca')
+handler = WebhookHandler('Your LINE Channel Secret')
 
 
 log_db = log()
