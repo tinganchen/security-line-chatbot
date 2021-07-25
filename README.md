@@ -7,10 +7,14 @@ A LINE chatbot build-up for RSA encryption & decryption services (database is bu
 ### Functions
 
 - Encryption: type "$$message$$", then the encrypted message will be sent back, and be stored into dataframe / database
+
 - Decryption: type "@@message@@", then the decrypted message will be sent back, and be stored into dataframe / database
+
 - Log file
-  - View: view the last 5 historical encryption or decryption records (personal info only)
-  - Clean: clean all individual historical records in the dataframe / database (other users are remained)
+
+  * View: view the last 5 historical encryption or decryption records (personal info only)
+  
+  * Clean: clean all individual historical records in the dataframe / database (other users are remained)
 
 ### Security chatbot QR code & Demo
 
