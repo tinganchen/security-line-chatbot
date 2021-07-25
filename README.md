@@ -45,7 +45,7 @@ git clone https://github.com/tinganchen/security-line-chatbot.git
 cd chatbot-df/
 ```
 
-- Fill in your LINE $channel access token$ & $channel secret$ in L18 & L20 in <app.py>
+- Fill in your LINE $channel access token$ & $channel secret$ in L18 & L20 in app.py
 
 - Run app.py
 
@@ -68,11 +68,11 @@ git push -f heroku master
   
 - Copy the deplyment url with /callback: https://<Heroku_app_name>.herokuapp.com/callback 
 
-- Paste onto LINE Webhook URL (LINE >> Messaging API settings >> Webhook settings) 
+- Paste onto LINE Webhook URL (see [2]) 
   
-- Verified as success. (To ensure no runtime error)
+- Verified as success. (to ensure no runtime error)
   
-- Scan the chatbot QR code (LINE >> Messaging API settings >> QR code)
+- Scan the chatbot QR code (see [2]) 
 
 - Can start interacting with the chatbot in the LINE chat room
 
@@ -102,11 +102,11 @@ cd <directory where ngrok downloaded>
 
 - LINE webhook url use & verify
 
-- Paste onto LINE Webhook URL (LINE >> Messaging API settings >> Webhook settings)
+- Paste onto LINE Webhook URL (see [2]) 
 
-- Verified as success. (To ensure no runtime error)
+- Verified as success. (to ensure no runtime error)
 
-- Scan the chatbot QR code (LINE >> Messaging API settings >> QR code)
+- Scan the chatbot QR code (see [2]) 
 
 - Can start interacting with the chatbot in the LINE chat room
 
