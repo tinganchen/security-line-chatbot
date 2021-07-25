@@ -15,6 +15,8 @@ A LINE chatbot build-up for RSA encryption & decryption services (database is bu
   * View: view the last 5 historical encryption or decryption records (personal info only)
   
   * Clean: clean all individual historical records in the dataframe / database (other users are remained)
+  
+- Help: show the functions description
 
 ### Security chatbot QR code & Demo
 
