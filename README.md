@@ -8,18 +8,85 @@ A LINE chatbot build-up for RSA encryption & decryption services (database is bu
 
 ### Settings
 
-- LINE developer account [1, 2]
+- [LINE developer account](https://developers.line.biz/console/) [1, 2]
 
-- Heroku account [1, 2]
+- [Heroku account](https://dashboard.heroku.com/apps) [1, 2]
 
-- ngrok download [3]
+- [ngrok download](https://ngrok.com/) [3]
 
 ### Implementation
 
-##### 1. Security Chatbot on dataframe
+```shell
+git clone https://github.com/tinganchen/security-line-chatbot.git
+```
+
+##### 1. Security Chatbot on dataframe + Heroku
+
+- Move to directory <chatbot-df/>
+
+```shell
+cd chatbot-df/
+```
+
+- Fill in your LINE $channel access token$ & $channel secret$ in L18 & L20 in <app.py>
+
+- Run app.py
+
+```shell
+python3 app.py
+```
+- Create a new app on Heroku & name your <Heroku app name> (see [2])
+
+- Log in Heroku & upload and build the project through git commands
+  
+```shell
+heroku login
+git init
+heroku git:remote -a <Heroku app name>
+git add .
+git commit -am 'upload'
+git push -f heroku master
+```
+Now the project is built. Copy the deplyment url with /callback: https://<Heroku app name>.herokuapp.com/callback as the LINE Webhook URL (LINE >> Messaging API settings >> Webhook settings) & verify as success.
+  
+- Scan the chatbot QR code (LINE >> Messaging API settings >> QR code)
+
+- Start interacting with the chatbot in the LINE chat room
+
+  
+##### 2. Security Chatbot on Spark database + ngrok
+
+- Move to directory <chatbot-df/>
+
+```shell
+cd chatbot-spark/
+```
+- Fill in your LINE $channel access token$ & $channel secret$ in L18 & L20 in <app.py>
+
+- Run app.py
+
+```shell
+python3 app.py
+```
+- Run ngrok
+
+```shell
+cd <directory where ngrok downloaded>
+./ngrok http 5000
+```
+
+Copy the forwarding url: https://xxxxxxxx.ngrok.io
+
+- LINE webhook url use & verify
+
+Paste the ngrok forwarding url with /callback: https://xxxxxxxx.ngrok.io/callback as the LINE Webhook URL (LINE >> Messaging API settings >> Webhook settings) & verify as success.
+
+- Scan the chatbot QR code (LINE >> Messaging API settings >> QR code)
+
+- Start interacting with the chatbot in the LINE chat room
 
 
-##### 2. Security Chatbot on Spark database
+
 
 ### Issues
 
