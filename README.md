@@ -119,9 +119,9 @@ $ ./ngrok http 5000
 - Can start interacting with the chatbot in the LINE chat room
 
 
-### Issue
+### Issues
   
-It seems Heroku does not support Spark. The project **chatbot-spark/** can be built on Heroku, but the Heroku app webhook url cannot be verified by LINE.
+Spark on Heroku.
 
   
 ### Reference
