@@ -41,18 +41,18 @@ $ git clone https://github.com/tinganchen/security-line-chatbot.git
 
 - Requirements
 
- * python-3.9.6 (default in Heroku v20 environment)
+  * python-3.9.6 (default in Heroku v20 environment)
  
- * other packages (see chatbot-df/requirements.txt)
+  * other packages (see _chatbot-df/requirements.txt_)
 
 
-- Move to directory chatbot-df/
+- Move to directory _chatbot-df/_
 
 ```shell
 $ cd chatbot-df/
 ```
 
-- Fill in your LINE $channel access token$ & $channel secret$ in L18 & L20 in app.py
+- Fill in your LINE **_channel access token_** & **_channel secret_** in L18 & L20 in app.py
 
 - Run app.py
 
@@ -86,12 +86,12 @@ $ git push -f heroku master
 
 - Requirements
 
- * python-3.6.14 (see chatbot-spark/runtime.txt)
+  * python-3.6.14 (see _chatbot-spark/runtime.txt_)
  
- * other packages (see chatbot-spark/requirements.txt)
+  * other packages (see _chatbot-spark/requirements.txt_)
 
 
-- Move to directory chatbot-spark/
+- Move to directory _chatbot-spark/_
 
 ```shell
 $ cd chatbot-spark/
