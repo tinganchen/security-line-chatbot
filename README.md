@@ -7,13 +7,17 @@ https://www.youtube.com/embed/YFZUAvOvXSo
 
 ### Line chatbot QR code
 
-<img src="./fig/QR_code.png" width="120" height="120">
+<img src="fig/QR_code.png" width="150" height="150">
 
 ### Inroduction
 
 A LINE chatbot build-up for RSA encryption & decryption services.
 
+<img src="fig/line_page.jpg" width="260" height="500">
+
 ### Functions
+
+<img src="fig/menu.jpg" width="230" height="360">
 
 - **Encryption**: type _"$$message$$"_, then the encrypted message will be sent back, and be stored into database
 
