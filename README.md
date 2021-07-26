@@ -37,9 +37,9 @@ A LINE chatbot build-up for RSA encryption & decryption services (database is bu
 $ git clone https://github.com/tinganchen/security-line-chatbot.git
 ```
 
-##### 1. Security Chatbot on dataframe + Heroku
+#### 1. Security Chatbot on dataframe + Heroku
 
-- Move to directory <chatbot-df/>
+- Move to directory **chatbot-df/**
 
 ```shell
 $ cd chatbot-df/
@@ -52,7 +52,7 @@ $ cd chatbot-df/
 ```shell
 $ python3 app.py
 ```
-- Create a new app on Heroku & name your <Heroku app name> (see [2])
+- Create a new app on Heroku & name your <Heroku_app_name> (see [2])
 
 - Log in Heroku & upload and build the project through git commands
   
@@ -66,27 +66,25 @@ $ git push -f heroku master
 ```
 - Now the project is built. 
   
-- Copy the deployment url with /callback: _https://<Heroku_app_name>.herokuapp.com/callback_ 
+- Copy the deployment url with /callback: **_https://<Heroku_app_name>.herokuapp.com/callback_** 
 
-- Paste onto LINE Webhook URL (see [2]) 
+- Paste as LINE **Webhook URL** & **verify** (see [2]) 
   
-- Verified as success. (to ensure no runtime error)
-  
-- Scan the chatbot QR code (see [2]) 
+- Scan the chatbot **QR code** (see [2]) 
 
 - Can start interacting with the chatbot in the LINE chat room
 
   
-##### 2. Security Chatbot on Spark database + ngrok
+#### 2. Security Chatbot on Spark database + ngrok
 
-- Move to directory <chatbot-df/>
+- Move to directory **chatbot-spark/**
 
 ```shell
 $ cd chatbot-spark/
 ```
-- Fill in your LINE $channel access token$ & $channel secret$ in L18 & L20 in <app.py>
+- Fill in your LINE **_channel access token_** & **_channel secret_** in L18 & L20 in _app.py_
 
-- Run app.py
+- Run _app.py_
 
 ```shell
 $ python3 app.py
@@ -98,22 +96,18 @@ $ cd <directory where ngrok downloaded>
 $ ./ngrok http 5000
 ```
 
-- Copy the forwarding url with /callback: https://xxxxxxxx.ngrok.io/callback
+- Copy the forwarding url with /callback: **_https://xxxxxxxx.ngrok.io/callback_**
 
-- LINE webhook url use & verify
+- Paste as LINE **Webhook URL** & **verify** (see [2]) 
 
-- Paste onto LINE Webhook URL (see [2]) 
-
-- Verified as success. (to ensure no runtime error)
-
-- Scan the chatbot QR code (see [2]) 
+- Scan the chatbot **QR code** (see [2]) 
 
 - Can start interacting with the chatbot in the LINE chat room
 
 
 ### Issue
   
-It seems Heroku does not support Spark. The project chatbot-spark/ can be built on Heroku, but the Heroku app webhook url cannot be verified by LINE.
+It seems Heroku does not support Spark. The project **chatbot-spark/** can be built on Heroku, but the Heroku app webhook url cannot be verified by LINE.
 
   
 ### Reference
