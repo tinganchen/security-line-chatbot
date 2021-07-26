@@ -1,11 +1,11 @@
 # A LINE security chatbot
 
-### Chatbot Demo
+### Demo
 
 https://www.youtube.com/embed/YFZUAvOvXSo
 
 
-### Line chatbot QR code
+### QR code
 
 <img src="fig/QR_code.png" width="150" height="150">
 
