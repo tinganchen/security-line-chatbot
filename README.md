@@ -5,7 +5,7 @@
 
 ### Inroduction
 
-A LINE chatbot build-up for RSA encryption & decryption services (database is built upon 1. dataframe, and 2. Spark database).
+A LINE chatbot build-up for RSA encryption & decryption services.
 
 ### Functions
 
@@ -37,7 +37,7 @@ A LINE chatbot build-up for RSA encryption & decryption services (database is bu
 $ git clone https://github.com/tinganchen/security-line-chatbot.git
 ```
 
-#### 1. Security Chatbot on dataframe + Heroku
+#### 1. Security Chatbot on pandas dataframe + Heroku
 
 - Requirements
 
