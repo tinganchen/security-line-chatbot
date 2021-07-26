@@ -34,7 +34,7 @@ A LINE chatbot build-up for RSA encryption & decryption services (database is bu
 ### Implementation
 
 ```shell
-git clone https://github.com/tinganchen/security-line-chatbot.git
+$ git clone https://github.com/tinganchen/security-line-chatbot.git
 ```
 
 ##### 1. Security Chatbot on dataframe + Heroku
@@ -42,7 +42,7 @@ git clone https://github.com/tinganchen/security-line-chatbot.git
 - Move to directory <chatbot-df/>
 
 ```shell
-cd chatbot-df/
+$ cd chatbot-df/
 ```
 
 - Fill in your LINE $channel access token$ & $channel secret$ in L18 & L20 in app.py
@@ -50,19 +50,19 @@ cd chatbot-df/
 - Run app.py
 
 ```shell
-python3 app.py
+$ python3 app.py
 ```
 - Create a new app on Heroku & name your <Heroku app name> (see [2])
 
 - Log in Heroku & upload and build the project through git commands
   
 ```shell
-heroku login
-git init
-heroku git:remote -a <Heroku_app_name>
-git add .
-git commit -am 'upload'
-git push -f heroku master
+$ heroku login
+$ git init
+$ heroku git:remote -a <Heroku_app_name>
+$ git add .
+$ git commit -am 'upload'
+$ git push -f heroku master
 ```
 - Now the project is built. 
   
@@ -82,20 +82,20 @@ git push -f heroku master
 - Move to directory <chatbot-df/>
 
 ```shell
-cd chatbot-spark/
+$ cd chatbot-spark/
 ```
 - Fill in your LINE $channel access token$ & $channel secret$ in L18 & L20 in <app.py>
 
 - Run app.py
 
 ```shell
-python3 app.py
+$ python3 app.py
 ```
 - Run ngrok
 
 ```shell
-cd <directory where ngrok downloaded>
-./ngrok http 5000
+$ cd <directory where ngrok downloaded>
+$ ./ngrok http 5000
 ```
 
 - Copy the forwarding url with /callback: https://xxxxxxxx.ngrok.io/callback
