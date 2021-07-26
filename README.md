@@ -9,17 +9,17 @@ A LINE chatbot build-up for RSA encryption & decryption services (database is bu
 
 ### Functions
 
-- Encryption: type "$$message$$", then the encrypted message will be sent back, and be stored into dataframe / database
+- **Encryption**: type _"$$message$$"_, then the encrypted message will be sent back, and be stored into database
 
-- Decryption: type "@@message@@", then the decrypted message will be sent back, and be stored into dataframe / database
+- **Decryption**: type _"@@message@@"_, then the decrypted message will be sent back, and be stored into database
 
-- Log file
+- **Log file**
 
-  * View: view the last 5 historical encryption or decryption records (personal info only)
+  * **View**: view the last 5 historical encryption or decryption records (personal info only)
   
-  * Clean: clean all individual historical records in the dataframe / database (other users are remained)
+  * **Clean**: clean all individual historical records in the database (other users' information is remained)
   
-- Help: show the description of functions
+- **Help**: show the description of functions
 
 
 
@@ -31,7 +31,7 @@ A LINE chatbot build-up for RSA encryption & decryption services (database is bu
 
 - [ngrok download](https://ngrok.com/) [3]
 
-### Implementation
+### Implementations
 
 ```shell
 $ git clone https://github.com/tinganchen/security-line-chatbot.git
@@ -39,7 +39,14 @@ $ git clone https://github.com/tinganchen/security-line-chatbot.git
 
 #### 1. Security Chatbot on dataframe + Heroku
 
-- Move to directory **chatbot-df/**
+- Requirements
+
+ * python-3.9.6 (default in Heroku v20 environment)
+ 
+ * other packages (see chatbot-df/requirements.txt)
+
+
+- Move to directory chatbot-df/
 
 ```shell
 $ cd chatbot-df/
@@ -77,7 +84,14 @@ $ git push -f heroku master
   
 #### 2. Security Chatbot on Spark database + ngrok
 
-- Move to directory **chatbot-spark/**
+- Requirements
+
+ * python-3.6.14 (see chatbot-spark/runtime.txt)
+ 
+ * other packages (see chatbot-spark/requirements.txt)
+
+
+- Move to directory chatbot-spark/
 
 ```shell
 $ cd chatbot-spark/
