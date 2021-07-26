@@ -66,7 +66,7 @@ $ git push -f heroku master
 ```
 - Now the project is built. 
   
-- Copy the deplyment url with /callback: https://<Heroku_app_name>.herokuapp.com/callback 
+- Copy the deployment url with /callback: _https://<Heroku_app_name>.herokuapp.com/callback_ 
 
 - Paste onto LINE Webhook URL (see [2]) 
   
