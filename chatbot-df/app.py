@@ -19,16 +19,14 @@ line_bot_api = LineBotApi('Your LINE Channel Access Token')
 # Channel Secret
 handler = WebhookHandler('Your LINE Channel Secret')
 
-
+## DB build up
 log_db = log()
 log_db.create_table()
 
-#log_db.view(5, '126')
-#row = ['126', 'encrypt', 'e']
-#log_db.insert_row(row)
-#log_db.clean('123')
+## RSA key generation
+RSA_Create_Key()
 
-
+## Emoji use list
 emoji_key = ['laugh1', 'laugh2', 'smile', 'congrats', 'clap', 'love', 'point_out', 'cry', 'encrypt', 'decrypt', 'log', 'help']
 emoji_info = ['😀', '😂', '🤗', '🎉', '👏', '😍', '👉', '😢', '🔐', '🔑', '👣', '❓']
 emoji_dict = dict(zip(emoji_key, emoji_info))
@@ -114,14 +112,14 @@ def handle_post_message(event):
 
                 
         elif postback_message in ['encrypt', 'decrypt']:
-            reply_message = TextSendMessage(text = f'Please paste your {postback_message}ed message.')
+            reply_message = TextSendMessage(text = f'Please paste your message for {postback_message}ion.')
             reply_messages.append(reply_message)
             
             if postback_message == 'encrypt':
-                reply_message = TextSendMessage(text = f'Must be formatted as: \n$$encrypted words$$.')
+                reply_message = TextSendMessage(text = f'Must be formatted as: \n$$message$$.')
                 reply_messages.append(reply_message)
             else:
-                reply_message = TextSendMessage(text = f'Must be formatted as: \n@@decrypted words@@.')
+                reply_message = TextSendMessage(text = f'Must be formatted as: \n@@message@@.')
                 reply_messages.append(reply_message)
             
     else:

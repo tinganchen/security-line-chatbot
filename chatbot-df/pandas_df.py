@@ -31,8 +31,7 @@ class log:
     def view(self, n, uid):
         df = self.df[self.df['UserID'] == uid]
         df = df[['Time', 'Service', 'Message']]
-        print(df)
-        select_df = df[-n:].T #df[-n:].T
+        select_df = df[-n:].T 
         if select_df.to_json() == '{}':
             return 'No records.'
         else:
