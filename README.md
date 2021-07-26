@@ -96,7 +96,7 @@ $ cd <directory where ngrok downloaded>
 $ ./ngrok http 5000
 ```
 
-- Copy the forwarding url with /callback: **_https://xxxxxxxx.ngrok.io/callback_**
+- Copy the forwarding url with /callback: **_https://<ngrok_random_string>.ngrok.io/callback_**
 
 - Paste as LINE **Webhook URL** & **verify** (see [2]) 
 
