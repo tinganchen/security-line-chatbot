@@ -2,8 +2,11 @@
 
 ### Demo
 
-https://www.youtube.com/embed/YFZUAvOvXSo
+[video](https://www.youtube.com/embed/YFZUAvOvXSo)
 
+### Detailed Introduction
+
+[slides](https://drive.google.com/file/d/15sn7H7yz3tOkQtyd9VRcueIfKJu6rWB8/view?usp=sharing)
 
 ### QR code
 
