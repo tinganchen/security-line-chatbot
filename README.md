@@ -1,10 +1,10 @@
-# A LINE security chatbot
+# A LINE Security Chatbot
 
 ### Demo
 
 [video](https://www.youtube.com/embed/YFZUAvOvXSo)
 
-### Detailed Introduction
+### Detailed introduction
 
 [slides](https://drive.google.com/file/d/15sn7H7yz3tOkQtyd9VRcueIfKJu6rWB8/view?usp=sharing)
 
